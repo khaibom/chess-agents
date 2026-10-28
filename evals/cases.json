@@ -1,0 +1,268 @@
+{
+  "source": "frozen synthetic completed-game fixtures",
+  "cases": [
+    {
+      "id": "white",
+      "color": "white",
+      "scenario": "normal",
+      "fixture": "games.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    },
+    {
+      "id": "black",
+      "color": "black",
+      "scenario": "normal",
+      "fixture": "games.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    },
+    {
+      "id": "sparse-white",
+      "color": "white",
+      "scenario": "normal",
+      "fixture": "sparse.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    },
+    {
+      "id": "sparse-black",
+      "color": "black",
+      "scenario": "normal",
+      "fixture": "sparse.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    },
+    {
+      "id": "empty",
+      "color": "white",
+      "scenario": "normal",
+      "fixture": "empty.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    },
+    {
+      "id": "stale",
+      "color": "black",
+      "scenario": "stale",
+      "fixture": "games.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    },
+    {
+      "id": "engine-down",
+      "color": "white",
+      "scenario": "engine_failure",
+      "fixture": "games.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    },
+    {
+      "id": "model-invalid",
+      "color": "white",
+      "scenario": "invalid_output",
+      "fixture": "games.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    },
+    {
+      "id": "unknown-charge",
+      "color": "black",
+      "scenario": "unknown_charge",
+      "fixture": "games.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    },
+    {
+      "id": "archives-down",
+      "color": "white",
+      "scenario": "archive_failure",
+      "fixture": "games.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    },
+    {
+      "id": "cutoff-white",
+      "color": "white",
+      "scenario": "normal",
+      "fixture": "games.json",
+      "cutoff": 1792713600,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    },
+    {
+      "id": "branch-black",
+      "color": "black",
+      "scenario": "normal",
+      "fixture": "branch.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "e2e4",
+        "c7c6",
+        "d2d4",
+        "d7d5",
+        "b1c3",
+        "d5e4",
+        "c3e4",
+        "c8f5"
+      ]
+    },
+    {
+      "id": "long-game",
+      "color": "white",
+      "scenario": "normal",
+      "fixture": "long.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7",
+        "e2e3",
+        "e8g8",
+        "g1f3",
+        "h7h6",
+        "g5h4",
+        "b7b6",
+        "f1d3",
+        "c8b7"
+      ]
+    },
+    {
+      "id": "exhausted-budget",
+      "color": "white",
+      "scenario": "budget",
+      "fixture": "games.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    },
+    {
+      "id": "deadline",
+      "color": "black",
+      "scenario": "deadline",
+      "fixture": "games.json",
+      "cutoff": 1792972800,
+      "target_moves": [
+        "d2d4",
+        "d7d5",
+        "c2c4",
+        "e7e6",
+        "b1c3",
+        "g8f6",
+        "c1g5",
+        "f8e7"
+      ]
+    }
+  ]
+}

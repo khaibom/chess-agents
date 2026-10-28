@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Private chess application state
+.secrets/
+.env.*
+!.env.example
+data/
+*.sqlite3*
+*.db*
+private-exports/

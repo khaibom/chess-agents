@@ -1,0 +1,42 @@
+services:
+  chess-agents:
+    build: .
+    image: chess-agents:local
+    init: true
+    restart: unless-stopped
+    user: "10001:10001"
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      CHESS_DB: /data/chess-agents.sqlite3
+      STOCKFISH_PATH: /usr/games/stockfish
+      CHESS_USER_AGENT: ${CHESS_USER_AGENT:-}
+      TELEGRAM_ALLOWED_USER_ID: ${TELEGRAM_ALLOWED_USER_ID:-}
+      OPENAI_API_KEY_FILE: /run/secrets/openai_key
+      TELEGRAM_BOT_TOKEN_FILE: /run/secrets/telegram_token
+    secrets:
+      - openai_key
+      - telegram_token
+    volumes:
+      - chess-data:/data
+    stop_grace_period: 15s
+    healthcheck:
+      test: ["CMD", "chess-agents", "doctor"]
+      interval: 60s
+      timeout: 12s
+      start_period: 15s
+      retries: 3
+
+secrets:
+  openai_key:
+    file: ./.secrets/openai_key
+  telegram_token:
+    file: ./.secrets/telegram_token
+
+volumes:
+  chess-data:
